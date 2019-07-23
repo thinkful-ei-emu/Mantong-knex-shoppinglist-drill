@@ -42,7 +42,6 @@ paginateItems(2);
 function afterDate(daysAgo) {
   knexInstance
     .select('id', 'name', 'price', 'date_added','checked','category')
-    .count('date_viewed AS views')
     .where(
       'date_added',
       '>',
