@@ -10,8 +10,8 @@ console.log('connection successful');
 
 const searchTerm = 'holo';
 knexInstance
-  .select('product_id', 'name', 'price', 'category')
-  .from('amazong_products')
+  .select('id', 'name', 'price', 'date_added','checked','category')
+  .from('shopping_list')
   .where('name', 'ILIKE', `%${searchTerm}%`)
   .then(result => {
     console.log(result);
@@ -19,8 +19,8 @@ knexInstance
 
 function searchByProduceName(searchTerm) {
   knexInstance
-    .select('product_id', 'name', 'price', 'category')
-    .from('amazong_products')
+    .select('id', 'name', 'price', 'date_added','checked','category')
+    .from('shopping_list')
     .where('name', 'ILIKE', `%${searchTerm}%`)
     .then(result => {
       console.log(result);

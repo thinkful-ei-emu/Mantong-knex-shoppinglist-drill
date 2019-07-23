@@ -20,6 +20,7 @@
     "morgan": "^1.9.1",
     "nodemon": "^1.19.1",
     "pg": "^7.11.0",
-    "supertest": "^4.0.2"
+    "supertest": "^4.0.2",
+    "typeorm": "^0.3.0-alpha.23"
   }
 }
